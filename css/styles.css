@@ -202,7 +202,7 @@ a:hover:after {
   height: 470px;
   bottom: 10px;
   right: 10px;
-  background-image: url(/img/glasses.png);
+  background-image: url(../img/glasses.png);
   z-index: 10;
 }
 
@@ -213,7 +213,7 @@ a:hover:after {
   height: 470px;
   bottom: 10px;
   right: 10px;
-  background-image: url(/img/camera.png);
+  background-image: url(../img/camera.png);
   z-index: 10;
 }
 
