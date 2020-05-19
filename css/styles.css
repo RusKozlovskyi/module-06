@@ -71,6 +71,7 @@ a:hover:after {
 
 .title_first {
   font-family: "Kaushan Script", cursive;
+  font-style: italic;
   font-weight: 400;
   font-size: 15px;
   color: rgb(51, 51, 51);
@@ -162,7 +163,7 @@ a:hover:after {
 }
 
 .meet_our_team {
-  margin-bottom: 80px;
+  margin-bottom: 75px;
 }
 
 .meet_our_team_list {
@@ -172,16 +173,31 @@ a:hover:after {
   justify-content: space-between;
 }
 
-.hover {
-  display: none;
-  position: absolute;
+.image_box {
+  position: relative;
   width: 380px;
   height: 470px;
-  bottom: 10px;
-  right: 10px;
-  opacity: 0.9;
-  transition-timing-function: linear;
-  transition-duration: 0.2s;
+  opacity: 1;
+}
+
+.image_box:hover {
+  width: 380px;
+  height: 470px;
+  display: block;
+  transform: translate(-3%, -3%);
+}
+
+.image_box:hover .image_box {
+  display: block;
+  color: aqua;
+}
+
+.hover_effect {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
   background-image: -moz-linear-gradient(
     90deg,
     rgb(252, 227, 138) 0%,
@@ -192,90 +208,42 @@ a:hover:after {
     rgb(252, 227, 138) 0%,
     rgb(243, 129, 129) 100%
   );
-  z-index: 15;
-}
-
-.hover_effect {
-  position: absolute;
-  display: none;
-  width: 380px;
-  height: 470px;
-  bottom: 10px;
-  right: 10px;
-  background-image: url(../img/glasses.png);
-  z-index: 10;
-}
-
-.hover_effect:nth-child(2) {
-  position: absolute;
-  display: none;
-  width: 380px;
-  height: 470px;
-  bottom: 10px;
-  right: 10px;
-  background-image: url(../img/camera.png);
-  z-index: 10;
-}
-
-.our_team_list_item:hover > .hover {
-  display: block;
-}
-
-.our_team_list_item:hover > button {
-  display: block;
-  transition: 0.2s;
-}
-
-.our_team_list_item:hover > .hover_effect {
-  display: block;
-  transition: 0.2s;
-}
-
-.our_team_list_item:hover > .card_img {
-  opacity: 0;
-  transition: 0.2s;
   transition-duration: 0.2s;
   transition-timing-function: linear;
+  transform: translate(0);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
-.share_block {
+.hover_effect:hover {
+  opacity: 0.9;
+  /* transform: translate(-3%, -3%); */
+}
+
+.social_block {
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  margin-top: 205px;
-  margin-left: 78px;
-  z-index: 5;
+  position: relative;
+  top: 0;
+  left: 0;
   width: 228px;
   height: 57px;
 }
 
-.share_block button {
-  display: none;
+.social_block button {
   width: 56px;
   height: 56px;
   border: none;
-}
-
-.our_team_list_item:hover .share_block button {
-  display: block;
-  position: relative;
-  bottom: 10px;
-  right: 10px;
-  width: 56px;
-  height: 56px;
   background-color: #fce38a;
-  transition: 0.2s;
 }
 
-.our_team_list_item:hover .share_block button:nth-child(1) {
-  display: block;
-  position: relative;
-  bottom: 10px;
-  right: 10px;
+.social_block button:hover {
   width: 56px;
   height: 56px;
+  border: none;
   background-color: rgb(149, 225, 211);
-  transition: 0.2s;
 }
 
 .card_name {
