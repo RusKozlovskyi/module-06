@@ -183,6 +183,8 @@ a:hover:after {
   width: 380px;
   height: 470px;
   display: block;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
   transform: translate(-3%, -3%);
 }
 
@@ -246,6 +248,8 @@ a:hover:after {
   height: 56px;
   border: none;
   background-color: rgb(149, 225, 211);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 
 .card_name {
