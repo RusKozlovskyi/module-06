@@ -186,9 +186,13 @@ a:hover:after {
   transform: translate(-3%, -3%);
 }
 
-.image_box:hover .image_box {
+.bg_card {
+  position: absolute;
   display: block;
-  color: aqua;
+  width: 380px;
+  height: 470px;
+  margin-bottom: 30px;
+  background: #95e1d3;
 }
 
 .hover_effect {
@@ -218,7 +222,6 @@ a:hover:after {
 
 .hover_effect:hover {
   opacity: 0.9;
-  /* transform: translate(-3%, -3%); */
 }
 
 .social_block {
