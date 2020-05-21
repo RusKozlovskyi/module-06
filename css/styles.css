@@ -226,10 +226,6 @@ a:hover:after {
   opacity: 0.9;
 }
 
-.image_box:hover > .social_block {
-  opacity: 1;
-}
-
 .social_block {
   display: flex;
   justify-content: space-between;
@@ -240,6 +236,10 @@ a:hover:after {
   width: 228px;
   height: 57px;
   opacity: 0;
+}
+
+.image_box:hover > .social_block {
+  opacity: 1;
 }
 
 .social_block button {
